@@ -1,0 +1,68 @@
+// HashSet:
+import java.util.HashSet;
+Set<Long> set = new HashSet<Long>();
+
+// bejaras:
+for (Long elem: set) {
+  System.out.println(elem);
+}
+
+// elem beszurasa a halmazba
+// true ha sikerul (nem szerepel a halmazban) false egyebkent
+set.add(1L);
+
+// elem keresese:
+// true ha a parameterul kapott elem szerepel a halmazban false egyebkent
+set.contains(1L);
+
+// elem torlese:
+// true ha sikerul (szerepel az elem a halmazban) false egyebkent
+set.remove(1L);
+
+
+
+// TreeSet:
+import java.util.TreeSet;
+// Long tipusu szamokat tarolo Binaris kereso fa.
+TreeSet<Long> set = new TreeSet<Long>();
+
+// bejaras:
+for (Long elem: set) {
+  System.out.println(elem);
+}
+
+// elem beszurasa a faba
+// true ha sikerul (nincs ilyen elem a faban) false egyebkent
+set.add(1L);
+
+// elem keresese:
+// true ha a parameterul kapott elem szerepel a halmazban (faban) false egyebkent
+set.contains(1L);
+
+// elem torlese:
+// true ha sikerul (szerepel az elem a halmazban) false egyebkent
+set.remove(1L);
+
+// minimum elem:
+// Vissza adja a legkisebb tarolt elemet. Ha a halmaz ures NoSuchElementException-t dob!
+set.first();
+
+// maximalis elem
+// Vissza adja a legnagyobb tarolt elemet. Ha a halmaz ures NoSuchElementException-t dob!
+set.last();
+
+// adott elemet megelozo elem (legnagyobb elem ami kisebb egyenlo a parameternel)
+// ha nincs ilyen elem null a vissza teresi ertek
+set.floor(1L);
+
+// adott elemet megelozo elem (legnagyobb elem ami kisebb a parameternel)
+// ha nincs ilyen elem null a vissza teresi ertek
+set.lower(1L);
+
+// adott elem rakovetkozo eleme (legkisebb elem ami a parameternel nagyobb egyenlo)
+// ha nincs ilyen null a vissza teresi ertek
+set.ceiling(1L);
+
+// adott elem rakovetkozo eleme (legkisebb elem ami a parameternel nagyobb)
+// ha nincs ilyen null a vissza teresi ertek
+set.higher(1L);
